@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+}
+
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.left-icon {
+    display: flex;
+    gap: 20px;
+   
+    cursor: pointer;
+}
+
+.right-icon {
+    display: flex;
+    gap: 20px;
+}
+
+.dropdown {
+    position:relative;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+.left-icon:hover .dropdown {
+    display: block;
+    background-color: white;
+  
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left-icon:hover .dropdown li {
+    margin: 8px 0;
+    padding: 5px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+}
+
+.left-icon:hover .dropdown li:last-child {
+    border-bottom: none;
+}
+
+.left-icon:hover .dropdown li a {
+    text-decoration: none;
+    color: #161515;
+    transition: color 0.3s ease;
+}
+
+.left-icon:hover .dropdown li a:hover {
+    color: blue;
+}
+
+.container img {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+}
+p {
+    text-align: center;
+    color: #161515;
+    font-style: normal;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding-top: 70px;
+
+}
+
+.collections {
+    display: flex;
+    
+    margin-top: 20px;
+}
+.wrap{
+    display: grid;
+    grid-template-columns: auto auto;
+    /* position: relative; */
+}
+
+.pan {
+    margin: 0px 0px 0px 20px;
+    /* position: relative; */
+}
+
+.pan img {
+    max-width: 100%;
+}
+
+.pan input {
+    margin-top: 10px;
+    background-color: #161515;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pan input:hover {
+    background-color: #444;
+}
+
+.btn {
+  
+   
+    background-color: #161515;
+    color: white;
+    border: none;
+    margin-bottom:10px;
+    padding: 10px 10px;
+    
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #444;
+}
+.image {
+    display:inline-block; 
+    padding: 10px;
+}
+
+.image img {
+    
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 280px; 
+
+}
+
+.con {
+    display:flex;
+    
+    
+}
+  
+  .card {
+    text-align: left;
+    padding: 10px;
+    
+    margin: 10px;
+    width: 20%;
+    
+  }
+  
+
+  
+  .card h1 {
+    font-size: 1.5rem;
+  }
+  
+  .card h2 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .card span {
+    
+    margin-top: 20px;
+   
+  }
+  span{
+
+  
+  background-color: #007bff;
+  color: #dbf512;
+  padding: 10px 10px;
+  border-radius: 4px;
+  margin: 10px;
+  cursor: pointer;
+  text-decoration: none;
+ 
+}
+.item {
+    text-align: center; 
+}
+
+.centered-text {
+
+    margin-top: 10px;
+    padding-bottom: 50px;
+
+}
+
+.image1{
+   margin: 10px;
+   padding:10px;
+}
+.logoo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+      background-color: #007bff;
+   
+  }
+  
+  .logo-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+  }
+.logoo img{
+    width: 50px;
+    height:50px;
+}
+.container {
+    margin: 0 auto;
+    padding: 10px;
+    width:100%
+}
+.footer {
+    background-color: #2c1b1b31;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+  }
+
+  .social-icons li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  .social-icons a {
+    color: #111010;
+    text-decoration: none;
+    font-size: 24px; 
+  }
+
+  .email {
+    display: flex;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+   
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+
+ 
+
+  .email button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .footer-content {
+    display: flex;
+   
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer-section {
+  width: auto;
+    margin-bottom: 20px;
+  }
+
+  .footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .footer-section ul {
+    list-style: none;
+    padding:1px;
+  }
+
+  .footer-section li {
+    margin-bottom: 5px;
+    
+    
+  }
+
+  .footer-section a {
+    color: #141414;
+    text-decoration: none;
+  }
